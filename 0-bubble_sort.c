@@ -12,5 +12,20 @@
 
 void bubble_sort(int *array, size_t size)
 {
-
+	long unsigned int i, j, n;
+	int A, temp;
+	A = array;
+	n = size;
+	for (i = 0; i < n; i++)
+	{
+		for (j = 0; j < (n - 1); j++)
+		{
+			if (A[j] > A[j + 1])
+			{
+				temp = A[j];
+				A[j] = A[j + 1];
+				A[j + 1] = temp;
+			}
+		}
+	}
 }
