@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "sort.h"
 
 /**
  * bubble_sort - A function that sorts an array of integers in
@@ -26,6 +27,7 @@ void bubble_sort(int *array, size_t size)
 				temp = A[j];
 				A[j] = A[j + 1];
 				A[j + 1] = temp;
+				print_array(array, size);
 			}
 		}
 	}
