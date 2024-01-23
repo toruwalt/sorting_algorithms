@@ -11,4 +11,10 @@
 
 void insertion_sort_list(listint_t **list)
 {
+	int i, j;
 
+	for (i = 1; i < n - 1; i++)
+	{
+		key = list[i];
+
+		for (j = 1; j > 0 and A[j]
